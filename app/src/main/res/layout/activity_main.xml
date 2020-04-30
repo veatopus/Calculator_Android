@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@android:color/black"
+    android:background="@android:color/holo_purple"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,20 +13,20 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="32dp"
-        android:background="@drawable/background_for_calculator"
+        android:background="@drawable/drowable_for_panel"
         android:gravity="right|center_vertical"
         android:padding="4dp"
-        android:paddingLeft="8dp"
+        android:paddingStart="80dp"
         android:paddingTop="8dp"
-        android:paddingRight="16dp"
+        android:paddingEnd="15dp"
         android:paddingBottom="16dp"
         android:hint="0.0"
         android:textColorHint="@android:color/tertiary_text_dark"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="30sp" />
 
     <LinearLayout
-        android:background="@android:color/black"
+        android:background="@android:color/transparent"
         android:id="@+id/buttons"
         android:layout_width="match_parent"
         android:layout_height="600dp"
@@ -41,7 +41,6 @@
             android:orientation="horizontal">
 
             <Button
-                android:background="@drawable/background_for_calculator"
                 android:id="@+id/button7"
                 style="@style/style_of_button"
                 android:layout_width="wrap_content"
@@ -133,19 +132,30 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <View
-                style="@style/style_of_button"
-                android:visibility="invisible" />
-
+            <Button
+                android:id="@+id/back"
+                android:background="@android:color/transparent"                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="👈"
+                android:textColor="@android:color/primary_text_light"
+                android:onClick="tappingLogic"
+                android:layout_width="0dp"/>
             <Button
                 android:id="@+id/button0"
                 style="@style/style_of_button"
                 android:onClick="tappingNumber"
                 android:text="0" />
 
-            <View
-                style="@style/style_of_button"
-                android:visibility="invisible" />
+            <Button
+                android:id="@+id/dot"
+                android:background="@android:color/transparent"                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="😊"
+                android:textColor="@android:color/primary_text_light"
+                android:onClick="tappingNumber"
+                android:layout_width="0dp"/>
 
         </LinearLayout>
 
@@ -164,12 +174,11 @@
 
             <Button
                 android:id="@+id/clear"
-                android:background="@android:color/black"
-                android:layout_height="match_parent"
+                android:background="@android:color/transparent"                android:layout_height="match_parent"
                 android:textSize="20sp"
                 android:layout_weight="1"
-                android:text="c"
-                android:textColor="@android:color/primary_text_dark"
+                android:text="👎"
+                android:textColor="@android:color/primary_text_light"
                 android:onClick="tappingLogic"
                 android:layout_width="0dp" />
 
