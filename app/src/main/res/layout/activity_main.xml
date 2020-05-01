@@ -4,218 +4,235 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@android:color/holo_purple"
+    android:background="@android:color/black"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"
-        android:background="@drawable/drowable_for_panel"
-        android:gravity="right|center_vertical"
-        android:padding="4dp"
-        android:paddingStart="80dp"
-        android:paddingTop="8dp"
-        android:paddingEnd="15dp"
-        android:paddingBottom="16dp"
-        android:hint="0.0"
-        android:textColorHint="@android:color/tertiary_text_dark"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="30sp" />
-
     <LinearLayout
-        android:background="@android:color/transparent"
-        android:id="@+id/buttons"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:layout_below="@+id/text"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/drowable_for_all"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/first_row"
+        <TextView
+            android:id="@+id/text"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button7"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="7" />
-
-            <Button
-                android:id="@+id/button8"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="8" />
-
-            <Button
-                android:id="@+id/button9"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="9" />
-
-        </LinearLayout>
-
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="32dp"
+            android:background="@drawable/drowable_for_panel"
+            android:gravity="right|center_vertical"
+            android:hint="0.0"
+            android:padding="4dp"
+            android:paddingStart="80dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="16dp"
+            android:textColor="#FFE603"
+            android:textColorHint="@android:color/tertiary_text_dark"
+            android:textSize="30sp" />
 
         <LinearLayout
-            android:id="@+id/second_row"
+            android:layout_below="@+id/text"
+            android:id="@+id/buttons"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="600dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button4"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="4" />
-
-            <Button
-                android:id="@+id/button5"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="5" />
-
-            <Button
-                android:id="@+id/button6"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="6" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/third_row"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button1"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="1" />
-
-            <Button
-                android:id="@+id/button2"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="2" />
-
-            <Button
-                android:id="@+id/button3"
-                style="@style/style_of_button"
-                android:layout_width="wrap_content"
-                android:onClick="tappingNumber"
-                android:text="3" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/fourth_row"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/back"
-                android:background="@android:color/transparent"                android:layout_height="match_parent"
-                android:textSize="20sp"
+            <LinearLayout
+                android:id="@+id/first_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="👈"
-                android:textColor="@android:color/primary_text_light"
-                android:onClick="tappingLogic"
-                android:layout_width="0dp"/>
-            <Button
-                android:id="@+id/button0"
-                style="@style/style_of_button"
-                android:onClick="tappingNumber"
-                android:text="0" />
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/dot"
-                android:background="@android:color/transparent"                android:layout_height="match_parent"
-                android:textSize="20sp"
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/button9"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="9" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/second_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="😊"
-                android:textColor="@android:color/primary_text_light"
-                android:onClick="tappingNumber"
-                android:layout_width="0dp"/>
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="4" />
 
-        <LinearLayout
-            android:id="@+id/fifth_row"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="5" />
 
-            <Button
-                android:id="@+id/button_addition"
-                style="@style/style_of_button"
-                android:onClick="tappingLogic"
-                android:text="+" />
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="6" />
 
-            <Button
-                android:id="@+id/clear"
-                android:background="@android:color/transparent"                android:layout_height="match_parent"
-                android:textSize="20sp"
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/third_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="👎"
-                android:textColor="@android:color/primary_text_light"
-                android:onClick="tappingLogic"
-                android:layout_width="0dp" />
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button_subtraction"
-                style="@style/style_of_button"
-                android:onClick="tappingLogic"
-                android:text="-" />
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/style_of_button"
+                    android:layout_width="wrap_content"
+                    android:onClick="tappingNumber"
+                    android:text="3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourth_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="tappingLogic"
+                    android:text="👈"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/button0"
+                    style="@style/style_of_button"
+                    android:onClick="tappingNumber"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/dot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="tappingNumber"
+                    android:text="😊"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fifth_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_addition"
+                    style="@style/style_of_button"
+                    android:onClick="tappingLogic"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:onClick="tappingLogic"
+                    android:text="👎"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/button_subtraction"
+                    style="@style/style_of_button"
+                    android:onClick="tappingLogic"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sixth_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_multiplication"
+                    style="@style/style_of_button"
+                    android:onClick="tappingLogic"
+                    android:text="*" />
+
+                <Button
+                    android:id="@+id/button_equals"
+                    style="@style/style_of_button"
+                    android:onClick="tappingLogic"
+                    android:text="=" />
+
+                <Button
+                    android:id="@+id/button_division"
+                    style="@style/style_of_button"
+                    android:onClick="tappingLogic"
+                    android:text="/" />
+            </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/sixth_row"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_multiplication"
-                style="@style/style_of_button"
-                android:onClick="tappingLogic"
-                android:text="*" />
-
-            <Button
-                android:id="@+id/button_equals"
-                style="@style/style_of_button"
-                android:onClick="tappingLogic"
-                android:text="=" />
-
-            <Button
-                android:id="@+id/button_division"
-                style="@style/style_of_button"
-                android:onClick="tappingLogic"
-                android:text="/" />
-        </LinearLayout>
 
     </LinearLayout>
-
 </RelativeLayout>
