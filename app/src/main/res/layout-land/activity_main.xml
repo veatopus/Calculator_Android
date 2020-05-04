@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="5dp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textMemory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="32dp"
+                android:gravity="right"
+                android:padding="4dp"
+                android:paddingStart="80dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="16dp"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="30sp"
+                android:freezesText="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:paddingStart="80dp"
+                android:paddingEnd="15dp"
+                android:gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/text"
+                android:background="@drawable/drowable_for_panel"
+                android:textColor="#FFE603"
+                android:textColorHint="@android:color/tertiary_text_dark"
+                android:textSize="30sp"
+                android:freezesText="true"
+
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/button_equals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drowble_for_equals"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/white"
+                android:text="="
+                android:textSize="32dp"
+                android:onClick="tappingLogic"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="7">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/drowable_for_all">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button7"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="7" />
+
+                        <Button
+                            android:id="@+id/button8"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="8" />
+
+                        <Button
+                            android:id="@+id/button9"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="9" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button4"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="4" />
+
+                        <Button
+                            android:id="@+id/button5"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="5" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="6" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button1"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="1" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="2" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            style="@style/style_of_button"
+                            android:layout_width="wrap_content"
+                            android:onClick="tappingNumber"
+                            android:text="3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            tools:ignore="NestedWeights" />
+                        <Button
+                            android:id="@+id/button0"
+                            style="@style/style_of_button"
+                            android:onClick="tappingNumber"
+                            android:text="0" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/drowable_for_all">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/back"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:onClick="tappingLogic"
+                            android:text="👈"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/clear"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:onClick="tappingLogic"
+                            android:text="👎"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/dot"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:onClick="tappingNumber"
+                            android:text="😊"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button_addition"
+                            style="@style/style_of_button"
+                            android:onClick="tappingLogic"
+                            android:text="+" />
+
+                        <Button
+                            android:id="@+id/button_subtraction"
+                            style="@style/style_of_button"
+                            android:onClick="tappingLogic"
+                            android:text="-" />
+
+                        <Button
+                            android:id="@+id/button_division"
+                            style="@style/style_of_button"
+                            android:onClick="tappingLogic"
+                            android:text="/" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            tools:ignore="NestedWeights" />
+                        <Button
+                            android:id="@+id/button_multiplication"
+                            style="@style/style_of_button"
+                            android:onClick="tappingLogic"
+                            android:text="*" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
